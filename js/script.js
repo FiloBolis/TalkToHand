@@ -245,11 +245,7 @@ function initAccessibilityFeatures() {
                 }
             }
         });
-    });
-    
-    // Skip to main content link
-    addSkipLink();
-    
+    });    
     // High contrast mode toggle
     initHighContrastMode();
     

@@ -4,18 +4,18 @@ $site_title = "TalkToHand";
 $site_description = "Traduzione automatica da LIS a italiano scritto e da italiano parlato a scritto";
 $contact_email = "info@talktohand.com";
 $team_members = [
-    "Daniele Porro",
-    "Filippo Bolis", 
-    "Andrea Proserpio"
+    "Bolis Filippo",
+    "Porro Daniele", 
+    "Proserpio Andrea"
 ];
 $link_linkedin = [
-    "#",
     "https://www.linkedin.com/in/filippo-bolis-88097a26a/",
+    "#",
     "#"
 ];
 $link_github = [
-    "#",
     "https://github.com/FiloBolis",
+    "#",
     "#"
 ];
 ?>
@@ -65,7 +65,7 @@ $link_github = [
                         <a class="nav-link" href="#contact">Contatti</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-primary ms-2" href="login.php">Accedi</a>
+                        <a class="btn btn-primary ms-2" href="SignUp_LogIn_Form.php?value=0">Accedi</a>
                     </li>
                 </ul>
             </div>
@@ -86,10 +86,10 @@ $link_github = [
                         Rendiamo la comunicazione accessibile a tutti.
                     </p>
                     <div class="d-flex gap-3 flex-wrap">
-                        <a href="register.php" class="btn btn-warning btn-lg px-4">
+                        <a href="SignUp_LogIn_Form.php?value=1" class="btn btn-warning btn-lg px-4">
                             <i class="fas fa-user-plus me-2"></i>Registrati Gratis
                         </a>
-                        <a href="login.php" class="btn btn-outline-light btn-lg px-4">
+                        <a href="SignUp_LogIn_Form.php?value=0" class="btn btn-outline-light btn-lg px-4">
                             <i class="fas fa-sign-in-alt me-2"></i>Accedi
                         </a>
                     </div>
