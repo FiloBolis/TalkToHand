@@ -36,5 +36,17 @@
             else
                 return null;
         }
+
+        public function getUsername($id) {
+            $query = "SELECT username FROM utenti WHERE id = ?";
+            $stmt = $this->conn->prepare($query);
+            $stmt->bind_param("i", $id);
+            $stmt->execute();
+            $result = $stmt->get_result();
+            if($result->num_rows < 1)
+                return null;
+            $row = $result->fetch_assoc();
+            return $row["username"];
+        }
     }
 ?>
